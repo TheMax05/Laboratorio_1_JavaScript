@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <div class="caja">
+            <h1> Laboratorio clínico</h1>
+            <h2> Registro para entrega de resultados</h2>
+            <div>
+                <form id="formularioPaciente" action="resultados.html" method="get">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="cedula">Cédula</label>
+                    <input type="text" id="cedula" name="cedula" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">telefono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipoExamen">Tipo de examen</label>
+                    <select id="tipoExamen" name="tipoExamen">
+                        <option value="value">Seleccione</option>
+                        <option value="Hemograma">Hemograma</option>
+                        <option value="Glucosa">Glucosa</option>
+                        <option value="Colesterol">Colesterol</option>
+                        <option value="Orina">Orina</option>
+                        <option value="Covid">Prueba covid</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fechaExamen">Fecha del examen</label>
+                    <input type="date" id="fechaExamen" name="fechaExamen" required>
+                </div>
+                <button type="submit">Enviar información</button>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
